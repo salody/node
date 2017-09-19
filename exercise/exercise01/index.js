@@ -1,5 +1,5 @@
 /**
- * 功能描述:
+ * 功能描述: process以及node cli
  * 2017/9/18
  * @author: salody
  */

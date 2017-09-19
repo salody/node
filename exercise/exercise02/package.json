@@ -1,0 +1,8 @@
+{
+  "name": "tcp-chat",
+  "version": "0.0.1",
+  "description": "My first TCP server",
+  "dependencies": {
+    
+  }
+}
