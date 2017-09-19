@@ -24,13 +24,13 @@ let users = {};
  */
 const server = net.createServer((connection) => {
 	// 欢迎标语
-	const WELCOME_SOLGAN = ` > Welcome to my node-chat!\n > You are within ${count} people from the world.\n > Please write your name and enter:`;
+	const WELCOME_SLOGAN = ` > Welcome to my node-chat!\n > You are within ${count} people from the world.\n > Please write your name and enter:`;
 	let nickname;
 
 	// connection是一个双向的stream
 	// connection监听
 	console.log('\033[32mnew client connected!\033[0m');
-	connection.write(WELCOME_SOLGAN);
+	connection.write(WELCOME_SLOGAN);
 
 	// 每连进来一个用户,用户数加1
 	count++;
