@@ -27,6 +27,17 @@ const server = net.createServer((connection) => {
 	const WELCOME_SLOGAN = ` > Welcome to my node-chat!\n > You are within ${count} people from the world.\n > Please write your name and enter:`;
 	let nickname;
 
+	// 消息广播
+	const broadcast = (msg, exceptMyself) => {
+		for (let user in users) {
+			if (users.hasOwnProperty(user)) {
+				if (!exceptMyself || user !== nickname) {
+					users[user].write(msg);
+				}
+			}
+		}
+	};
+
 	// connection是一个双向的stream
 	// connection监听
 	console.log('\033[32mnew client connected!\033[0m');
@@ -39,6 +50,8 @@ const server = net.createServer((connection) => {
 	connection.on('end', () => {
 		count--;
 		delete users[nickname];
+		// 广播用户退出的消息
+		broadcast(nickname + ' left the chat room', true);
 	});
 
 	// 设置编码格式
