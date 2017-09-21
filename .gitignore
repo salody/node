@@ -21,3 +21,5 @@ yarn-error.log*
 /.idea
 
 exercise/exercise01/node_modules/
+exercise/exercise02/node_modules/
+exercise/exercise03/node_modules/
