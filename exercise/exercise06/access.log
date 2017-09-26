@@ -1,0 +1,6 @@
+::1 - - [26/Sep/2017:14:59:08 +0000] "GET /c HTTP/1.1" 404 140 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+::1 - - [26/Sep/2017:14:59:12 +0000] "GET /a HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+::1 - - [26/Sep/2017:14:59:17 +0000] "GET /b HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+::ffff:192.168.0.109 - - [26/Sep/2017:15:07:50 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
+::ffff:192.168.0.109 - - [26/Sep/2017:15:08:16 +0000] "GET /a HTTP/1.1" 200 - "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
+::ffff:192.168.0.109 - - [26/Sep/2017:15:09:00 +0000] "GET /b HTTP/1.1" 200 - "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"

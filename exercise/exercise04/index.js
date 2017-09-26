@@ -23,10 +23,14 @@ app.use(bodyParser.json());
 // session1.5版本以后不需要用，详见readme
 //app.use(cookieParser());
 
-app.use(session({ secret: 'my secret' }));
+app.use(session({
+	secret: 'my secret',
+	resave: true,
+	saveUninitialized: false
+}));
 
 // 指定模板引擎
-app.set('views', path.join(__dirname, 'views'))
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 // 路由
