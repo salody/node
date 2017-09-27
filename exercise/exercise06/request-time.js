@@ -22,12 +22,14 @@ module.exports = function (options) {
 		// 保持对原函数的引用
 		let end = res.end;
 		// 构造自己的res.end
+		// 这里的参数是socket.end中的。一定要加上
 		res.end = function (chunk, encoding) {
 			// 将原函数重新绑定回去
 			res.end = end;
 			// 执行原函数
 			res.end(chunk, encoding);
-			// 清除定时器
+			// 清除定时器。
+			// 不清楚定时器的后果就是只要第一次可能不触发报警，后面的全触发
 			clearTimeout(timer);
 		};
 
