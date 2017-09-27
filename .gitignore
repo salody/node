@@ -23,3 +23,9 @@ yarn-error.log*
 exercise/exercise01/node_modules/
 exercise/exercise02/node_modules/
 exercise/exercise03/node_modules/
+exercise/exercise03/demo.html
+exercise/exercise03/test.js
+exercise/exercise04/node_modules/
+exercise/exercise05/node_modules/
+exercise/exercise06/node_modules/
+exercise/exercise07/node_modules/
